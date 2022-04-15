@@ -13,7 +13,7 @@ The library was tested and worked well with ESP32, Teensy4.0, and RP2040.
 
 # Installation 
 
-1.	Clone this repository under /Arduino/libraries directory.
+1.	Clone SZ4IoT directory under /Arduino/libraries directory.
 2.	Add #include <SZ4IoT.h> to your sketch.
 3.	For compressing and decompressing (Float, Double, int8_t, int16_t, and int32_t) data, declare the array and its size and then call it inside the setup () function.
 4.	For example, to compress and decompress floating data:
