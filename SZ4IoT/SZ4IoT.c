@@ -2,7 +2,6 @@
 #include "stdint.h"
 #include"SZ_lib.h"
 
-
 sz_params *confparams_cpr;
 int  errorBoundMode;
 
