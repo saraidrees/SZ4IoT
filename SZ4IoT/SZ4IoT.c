@@ -32,8 +32,7 @@ void SZ4FLOAT(float *data, int nbEle){
         error[i]=fabs(data[i]-data2[i]);
     float myrms=rms4float(error,nbEle);
     printf("RMS %f\n",myrms);
-    float Compratio = ((float)(nbEle*(sizeof(float)))/outSize); 
-    printf("Compression ratio = %f \n",Compratio);
+    
 
     free(data2);
     free(bytes);
@@ -72,10 +71,6 @@ void SZ4DOUBLE(double *data, int nbEle){
     float myrms=rms4double(error,nbEle);
     printf("RMS %f\n",myrms);
    
-    float Compratio = ((float)(nbEle*(sizeof(double)))/outSize); 
-    printf("Compression ratio = %f \n",Compratio);
-
-   
     free(data2);
     free(bytes);
     free(error);
@@ -112,8 +107,6 @@ void SZ4INT8(int8_t *data, int nbEle){
    float myrms=rms4int8(error,nbEle);
    printf("RMS %f\n",myrms);
     
-   float Compratio = ((float)(nbEle*(sizeof(int8_t)))/outSize); 
-   printf("Compression ratio = %f \n",Compratio);
 
    free(data2);
    free(bytes);
@@ -151,9 +144,6 @@ void SZ4INT16(int16_t *data, int nbEle){
         error[i]= abs(data[i]-data2[i]);  
    float myrms=rms4int16(error,nbEle);
    printf("RMS %f\n",myrms);
-
-   float Compratio = ((float)(nbEle*(sizeof(int16_t)))/outSize); 
-   printf("Compression ratio = %f \n",Compratio);
   
    free(data2);
    free(bytes);
@@ -190,9 +180,6 @@ void SZ4INT32(int32_t *data, int nbEle){
    float myrms=rms4int32(error,nbEle);
    printf("RMS %f\n",myrms);
 
-   float Compratio = ((float)(nbEle*(sizeof(int32_t)))/outSize); 
-   printf("Compression ratio = %f \n",Compratio);
-  
     free(data2);
     free(bytes);
     free(error);
